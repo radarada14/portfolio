@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-primary: #000000;
+    --color-secondary: #F6F6F6;
+    --color-terceary: #22D4FD;
+    --color-hover:#272727;
+
+    --font--title: "Krona One", sans-serif;
+    --font--paragraph: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.header__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.header__menu__url {
+    color: var(--color-terceary);
+    font-family: var(--font--paragraph);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    padding: 6% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.presentation__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.presentation__content__title {
+    font-size: 2.25rem;
+    font-family: var(--font--title);
+}
+
+.title-hl {
+    color: var(--color-terceary);
+}
+
+.presentation__content__text {
+    font-size: 1.5rem;
+    font-family: var(--font--paragraph);
+    font-weight: 400;
+}
+
+.presentation__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+    font-family: var(--font--title);
+}
+
+.presentation__links__url {
+    width: 50%;
+    text-align: center;
+    padding: 21.5px 0;
+    border-radius: 8px;
+    font-family: var(--font--paragraph);
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--color-secondary);
+    border: 2px solid var(--color-terceary);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.presentation__links__url:hover {
+    background-color: var(--color-hover);
+}
+
+.presentation__links__subtitle {
+    font-size: 1.5rem;
+    font-family: var(--font--title);
+    font-weight: 400;
+}
+
+.presentation__image {
+    width: 50%;
+}
+
+.footer {
+    background-color: var(--color-terceary);
+    padding: 23.64px;
+    color: var(--color-primary);
+    text-align: center;
+    font-family: var(--font--paragraph);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        padding: 10% 10% 10% 10%;
+    }
+    .header__menu {
+        justify-content: center;
+    }
+    .presentation {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .presentation__content {
+        width: auto;
+    }
+}
